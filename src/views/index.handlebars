@@ -1,0 +1,11 @@
+<h1>Lola, Boliqueso y la Ardilla, los amo infinitamente!!!!!</h1>
+
+{{#each imagenes}}
+    <div class="card">
+        <img src={{this.path}} alt="">
+        <h3> {{this.title}} </h3>
+        <p> {{this.description}} </p>
+        <a href="/image/{{this.id}}/delete" class="btn"> Eliminar </a>
+    </div>
+{{/each}}
+

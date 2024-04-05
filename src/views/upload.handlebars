@@ -1,0 +1,16 @@
+<div class="upload">
+    <form action="/upload" method="POST" enctype="multipart/form-data"> {{!-- en action mandamos la ruta, en method el metodo que vamos a usar, enctype multipart/form-data para que se envie correctamente --}}
+        <div class="uploadContainer">
+            <input type="file" name="image"> {{!-- type tipo de input, en name tenemos que colocar el mismo nombre que pusimos en app.js cuando configuramos multer app.use(multer({storage}).single("image")) --}}
+        </div>
+        <div class="uploadContainer">
+            <input type="text" name="title" placeholder="Titulo de la imagen">
+        </div>
+        <div class="uploadContainer">
+            <input type="text" name="description" placeholder="Descripción">
+        </div>
+        <div class="uploadContainer">
+            <button>Publicar</button>
+        </div>
+    </form>
+</div>
